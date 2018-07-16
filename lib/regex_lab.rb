@@ -85,6 +85,7 @@ def valid_phone_number?(phone)
  #phone.chomp.match(/^\d{10}$/) ? true : false
  #phone.match(/(?:\+?|\b)[0-9]{10}\b/) ? true : false
  #phone.match(/\b[0-9]{1-10}\b/) ? true : false
+ #phone.match(/\b\d{1}?\d{1,3}+\d{1,3}+\d{1,4}\b/)|(/\b\d{11}/)|(/\d{1,11}/) ? true : false
  phone.match(/\b\d{1}?\d{1,3}+\d{1,3}+\d{1,4}\b/)|(/\b\d{11}/)|(/\d{1,11}/) ? true : false
   #phone.match(/\b\d{3}*\d{4}*\d{10}\b/) ? true : false
 end
